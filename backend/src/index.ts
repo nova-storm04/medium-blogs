@@ -9,6 +9,7 @@ const app = new Hono<{
     JWT_SECRET: string
   }
 }>()
+// testing pr
 app.use('/*', cors())
 app.route("/api/v1/user", userRouter)
 app.route("/api/v1/blog", blogRouter)
